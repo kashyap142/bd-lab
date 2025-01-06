@@ -1,0 +1,14 @@
+*.txt
+
+*.csv
+
+*.jar
+
+*.class
+
+*.log
+
+.vscode
+.DS_Store
+.idea
+
