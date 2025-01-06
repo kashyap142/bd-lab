@@ -1,0 +1,37 @@
+/* hadoop
+
+javac -d . *.java
+
+gedit Manifest.txt
+	Main-Class: <package>.driver
+
+gedit input.txt (only for oddeven, countword)
+	// write here
+	
+jar cfm <jarFile>.jar Manifest.txt <package>/*.class
+
+hadoop jar <jarFile>.jar <inputDataset> output
+
+cat output/*
+*/
+
+
+/* pyspark
+
+spark-shell --version (check)
+
+gedit <fileName>.py
+
+spark-submit <fileName>.py <inputDataset> output1 output2
+
+
+cat output1/*
+
+cat output2/*
+*/
+
+
+/* pig
+pig (grunt will appear)
+
+*/

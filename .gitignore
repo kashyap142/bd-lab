@@ -1,5 +1,7 @@
 *.txt
 
+!cmd.txt
+
 *.csv
 
 *.jar
