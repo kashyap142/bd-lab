@@ -9,7 +9,7 @@ public class mapper extends MapReduceBase implements Mapper<LongWritable, Text, 
 
 		String[] line = value.toString().split(",");
 		
-		// match with first column name
+		// match with first column name in the input dataset
 		if(line[0].equals("Src")) {
 			return;
 		}
