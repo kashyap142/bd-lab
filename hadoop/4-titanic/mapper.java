@@ -13,8 +13,8 @@ public class mapper extends MapReduceBase implements Mapper<LongWritable, Text, 
 		try {
 			String survived = line[1];
 
-			String sex = line[5];	// 4 --> 5
-			String ageStr = line[6];	// 5 --> 6
+			String sex = line[4];
+			String ageStr = line[5];
 
 			int pClass = Integer.parseInt(line[2]);
 
