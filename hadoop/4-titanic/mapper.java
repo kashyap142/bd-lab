@@ -29,7 +29,7 @@ public class mapper extends MapReduceBase implements Mapper<LongWritable, Text, 
 		
 		}
 		catch(NumberFormatException e) {
-		
+
 		}
 	}
 }

@@ -8,14 +8,14 @@ public class mapper extends MapReduceBase implements Mapper<LongWritable, Text, 
 	public void map(LongWritable key, Text value, OutputCollector<Text, DoubleWritable> output, Reporter r) throws IOException {
 
 		String[] line = value.toString().split(",");
-		
+
 		// match with first column name in the input dataset
-		if(line[0].equals("Src")) {
+		if(line[0].equals("ID")) {
 			return;
 		}
-		
+
 		Double longitude = Double.parseDouble(line[7]);
-		
+
 		output.collect(new Text(line[11]), new DoubleWritable(longitude));	
 	}
 }

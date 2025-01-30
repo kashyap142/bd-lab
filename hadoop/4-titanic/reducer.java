@@ -30,7 +30,7 @@ public class reducer extends MapReduceBase implements Reducer<Text, IntWritable,
 				sum += value.next().get();
 			}
 
-			output.collect(new Text(key), new DoubleWritable(sum));
+			output.collect(new Text(key + " count: "), new DoubleWritable(sum));
 		}
 	}
 }
